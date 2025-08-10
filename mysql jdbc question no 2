@@ -1,0 +1,55 @@
+package jdbc;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class InsertEmployees {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/company?serverTimezone=UTC&useSSL=false";
+        String user = "root";              
+        String password = "123456"; 
+
+        String sql = "INSERT INTO employees (empcode, empname, empage, esalary) VALUES (?, ?, ?, ?)";
+
+        Object[][] employees = {
+                { 101, "Jenny",   25, 10000.0 },
+                { 102, "Jacky",   30, 20000.0 },
+                { 103, "Joe",     20, 40000.0 },
+                { 104, "John",    40, 80000.0 },
+                { 105, "Shameer", 25, 90000.0 }
+        };
+
+        try {
+            // optional for modern drivers, but safe:
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.err.println("MySQL JDBC driver not found. Add the connector JAR to classpath.");
+            e.printStackTrace();
+            return;
+        }
+
+        try (Connection conn = DriverManager.getConnection(url, user, password);
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            conn.setAutoCommit(false); // batch mode
+
+            for (Object[] emp : employees) {
+                pstmt.setInt(1, (Integer) emp[0]);
+                pstmt.setString(2, (String) emp[1]);
+                pstmt.setInt(3, (Integer) emp[2]);
+                pstmt.setDouble(4, ((Number) emp[3]).doubleValue());
+                pstmt.addBatch();
+            }
+
+            int[] result = pstmt.executeBatch();
+            conn.commit();
+
+            System.out.println("Inserted rows: " + result.length);
+
+        } catch (SQLException e) {
+            System.err.println("SQL error:");
+            e.printStackTrace();
+        }
+    }
+}
