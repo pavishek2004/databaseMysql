@@ -60,7 +60,7 @@ question 5:
 
 question 6:
 
-<img width="612" height="608" alt="Image" src="https://github.com/user-attachments/assets/2b824306-4792-4f15-99ee-791bd8bd887b" />
+<img width="416" height="27" alt="Image" src="https://github.com/user-attachments/assets/191b7bae-4fbb-4f1d-bfa6-d034f9039ec1" />
 
 question 7:
 
@@ -69,7 +69,7 @@ question 7:
 
 question 8:
 
-<img width="416" height="27" alt="Image" src="https://github.com/user-attachments/assets/191b7bae-4fbb-4f1d-bfa6-d034f9039ec1" />
+<img width="612" height="608" alt="Image" src="https://github.com/user-attachments/assets/2b824306-4792-4f15-99ee-791bd8bd887b" />
 
 question 9 and 10:
 
