@@ -37,6 +37,7 @@ result:
 <img width="1215" height="149" alt="Image" src="https://github.com/user-attachments/assets/3510b5e8-9238-4dd0-ad00-cc2cb06424fc" />
 
 Screenshots of mongodb:
+
 question 1:
 
 <img width="647" height="649" alt="Image" src="https://github.com/user-attachments/assets/94fc6cf1-59fe-4b4f-9068-fc3903f48a91" />
@@ -62,12 +63,15 @@ question 6:
 <img width="612" height="608" alt="Image" src="https://github.com/user-attachments/assets/2b824306-4792-4f15-99ee-791bd8bd887b" />
 
 question 7:
+
 <img width="851" height="642" alt="Image" src="https://github.com/user-attachments/assets/cb7bd06d-9b8c-43e2-b4d6-1c670c60211a" />
 
 
 question 8:
+
 <img width="416" height="27" alt="Image" src="https://github.com/user-attachments/assets/191b7bae-4fbb-4f1d-bfa6-d034f9039ec1" />
 
 question 9 and 10:
+
 <img width="833" height="81" alt="Image" src="https://github.com/user-attachments/assets/04284514-26d1-4ae4-8c47-2931b7da7e3d" />
 
